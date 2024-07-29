@@ -36,5 +36,5 @@ cp -r %{_builddir}/pip-packages/* %{buildroot}/usr/lib/python3.9/site-packages/
 /usr/lib/python3.9
 
 %changelog
-* Thu Jun 23 2016 Juan J. Prieto <jjprieto@redborder.com> - 0.0.1-1
+* Mon Jul 29 Miguel Álvarez <malvarez@redborder.com> -
 - first spec version
