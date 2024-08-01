@@ -6,12 +6,6 @@ Main package to install python libs in redborder systems
 
 - Rocky Linux 9
 
-#### Installation
-
-1. Install the redborder repo following the steps described in https://repo.redborder.com 
-
-2. yum install redborder-manager
-
 ## Contributing
 
 1. Fork the repository on Github
