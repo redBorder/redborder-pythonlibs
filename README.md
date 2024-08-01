@@ -1,6 +1,6 @@
-# redborder-manager Main package
+# redborder-pythonlibs Main package
  
-Main package to install redborder manager in Rocky Linux 9
+Main package to install python libs in redborder systems
 
 #### Platforms
 
@@ -23,8 +23,6 @@ Main package to install redborder manager in Rocky Linux 9
 
 ## License and Authors
 
-- Carlos J. Mateos <cjmateos@redborder.com>
-- Juan J. Prieto <jjprieto@redborder.com>
-- Miguel Negrón <manegron@redborder.com>
+- Miguel Álvarez <malvarez@redborder.com>
 
 LICENSE: AFFERO GENERAL PUBLIC LICENSE, Version 3, 19 November 2007
