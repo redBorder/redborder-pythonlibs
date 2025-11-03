@@ -10,8 +10,8 @@ Summary: Main package for redborder python3 libs
 License: AGPL 3.0
 URL: https://github.com/redBorder/redborder-pythonlibs
 
-BuildRequires:  python3.9 python3.9-setuptools python3.9-pip
-BuildRequires:  wget
+BuildRequires:  python3.9 python3.9-setuptools python3.9-pip python3.9-devel
+BuildRequires:  wget gcc openssl-devel
 
 %description
 This package installs specified pip packages for Python 3.9 and extracts them to /usr/lib/python3.9.
