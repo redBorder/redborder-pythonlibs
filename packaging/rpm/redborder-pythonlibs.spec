@@ -24,7 +24,7 @@ mkdir -p %{_builddir}/pip-packages
 
 
 # Install additional pip packages
-/usr/bin/pip3 install --target=%{_builddir}/pip-packages pyattck
+/usr/bin/pip3 install --target=%{_builddir}/pip-packages pyattck yara
 
 %install
 mkdir -p %{buildroot}/usr/lib/python3.9/site-packages
