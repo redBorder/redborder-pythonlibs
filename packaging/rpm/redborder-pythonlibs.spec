@@ -36,5 +36,7 @@ cp -r %{_builddir}/pip-packages/* %{buildroot}/usr/lib/python3.9/site-packages/
 /usr/lib/python3.9
 
 %changelog
+* Mon Nov 03 2025 Pablo Pérez <pperez@redborder.com> -
+- Added yara package to the installation list
 * Mon Jul 29 2024 Miguel Álvarez <malvarez@redborder.com> -
 - first spec version
