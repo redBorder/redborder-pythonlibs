@@ -40,6 +40,7 @@ srpm: build_prepare
 
 rpm: srpm
 	/usr/bin/mock \
+		--enable-network \
 		-r $(MOCK_CONFIG) \
 		--define "__version $(VERSION)"\
 		--define "__release $(BUILD_NUMBER)"\

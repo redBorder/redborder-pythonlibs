@@ -10,8 +10,8 @@ Summary: Main package for redborder python3 libs
 License: AGPL 3.0
 URL: https://github.com/redBorder/redborder-pythonlibs
 
-BuildRequires:  python3.9 python3.9-setuptools python3.9-pip
-BuildRequires:  wget
+BuildRequires:  python3.9 python3.9-setuptools python3.9-pip python3.9-devel
+BuildRequires:  wget gcc openssl-devel
 
 %description
 This package installs specified pip packages for Python 3.9 and extracts them to /usr/lib/python3.9.
@@ -24,7 +24,8 @@ mkdir -p %{_builddir}/pip-packages
 
 
 # Install additional pip packages
-/usr/bin/pip3 install --target=%{_builddir}/pip-packages pyattck
+/usr/bin/pip3 install --no-binary=:all: --no-cache-dir \
+  --target=%{_builddir}/pip-packages pyattck==7.1.2 yara-python==4.5.4
 
 %install
 mkdir -p %{buildroot}/usr/lib/python3.9/site-packages
@@ -36,5 +37,7 @@ cp -r %{_builddir}/pip-packages/* %{buildroot}/usr/lib/python3.9/site-packages/
 /usr/lib/python3.9
 
 %changelog
+* Mon Nov 03 2025 Pablo Pérez <pperez@redborder.com> -
+- Added yara package to the installation list
 * Mon Jul 29 2024 Miguel Álvarez <malvarez@redborder.com> -
 - first spec version
