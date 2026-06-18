@@ -25,7 +25,7 @@ mkdir -p %{_builddir}/pip-packages
 
 # Install additional pip packages
 /usr/bin/pip3 install --no-binary=:all: --no-cache-dir \
-  --target=%{_builddir}/pip-packages pyattck==7.1.2 yara-python==4.5.4
+  --target=%{_builddir}/pip-packages pyattck==7.1.2 yara-python==4.5.4 "pyvmomi<8.0.3.0"
 
 %install
 mkdir -p %{buildroot}/usr/lib/python3.9/site-packages
